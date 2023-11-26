@@ -1,0 +1,39 @@
+---
+title: "Note_1"
+format: html
+editor: visual
+---
+
+## Hilbert Space and the geometry of influence functions
+
+### 1.1 General properties of Hilbert Space
+
+Hilbert Space($\mathcal{H}$) is a complete linear vector space equipped with inner product $\langle{ \text{ , } } \rangle: \mathcal{H} \times\mathcal{H} \rightarrow \mathbb{R}$, and the norm is defined as $\lVert \ . \rVert = \sqrt{\langle \ . \ , \ . \ \rangle}$
+
+, and the norm is defined as  
+
+Geometry of Hilbert Space: For a closed, linear subspace of and every , there exists a point that minimizes for every  . This poinst has orthogonality relationship   
+
+We refer as the projection of g onto the space .
+
+Two subsets and are orthogonal () if for every pair of
+
+The orthocomplement of a set is the set of all g satisfying
+
+Pythagorean Theroem: 
+
+ If g_1 and g_2 are orthogonal elements in Hilbert Space H, then ![{"id":"19","backgroundColor":"#ffffff","font":{"color":"#000000","family":"Arial","size":11},"type":"\$\$","aid":null,"code":"\$\$\\\\left\\\\\|h\_{1}\\\\,+\\\\,h\_{2}\\\\right\\\\\|\^{2}\\\\,=\\\\,\\\\left\\\\\|h\_{1}\\\\right\\\\\|\^{2}\\\\,+\\\\,\\\\left\\\\\|h\_{2}\\\\right\\\\\|\^{2}\$\$","ts":1700678184734,"cs":"1Jb/edPO7H0uC03OMqx4hg==","size":{"width":217,"height":20}}](https://lh7-us.googleusercontent.com/LSxEJcvGGLraPrqMqReXJnbeCMWlSU6xC-xf9zwUmq4_l49hlbc-cqH3POkabv3mbKqWoWTPh-8d7ApM_v6oZM4P0XpT9qnuttbZ-BMtlRXJXPEKuh8ez6Xkr6jAuA1QnQSRsHVesQG0TcmwXHu9k-Q){alt="{\"id\":\"19\",\"backgroundColor\":\"#ffffff\",\"font\":{\"color\":\"#000000\",\"family\":\"Arial\",\"size\":11},\"type\":\"$$\",\"aid\":null,\"code\":\"$$\\\\left\\\\|h_{1}\\\\,+\\\\,h_{2}\\\\right\\\\|^{2}\\\\,=\\\\,\\\\left\\\\|h_{1}\\\\right\\\\|^{2}\\\\,+\\\\,\\\\left\\\\|h_{2}\\\\right\\\\|^{2}$$\",\"ts\":1700678184734,\"cs\":\"1Jb/edPO7H0uC03OMqx4hg==\",\"size\":{\"width\":217,\"height\":20}}"}
+
+The introduction of Hilbert Space allows us to consider distance between elements, angles, and orthogonality between vectors.
+
+1.  The Space of Mean-Zero q-dimensional Random Functions
+
+ Here, we are dealing with Mean-Zero random functions. The reason is those functions will act as estimating functions.
+
+ Let Z denote the random vector for a single observation. Consider the q-dimensional mean-zero random functions of Z, h(Z): Z -\> , where h(Z) is measurableand also satisfies 1) E\[h(Z)\] = 0, 2) E\[\] \<
+
+ We can think the second condition as L_2 condition.
+
+ The space consisting of h(Z) is linear space. We can think it as Euclidean space as analogy. The dimension of h(Z) depends on the dimension of Z as well as dimension of h(z). For example, suppose h(Z) is an one-dimendional random function, and Z is a discrete variable and has values of z_1, z_2, ... z_k. Then, h(Z) = a_1I(Z = z_1) + ... a_k(I(Z = z_k) for any real values constants, a1, ..., ak. This space is a linear spce spanned by the k linearly independent functions I(Z = z_i), i = 1, ..., k. So it's k dimonsinal linear space but actually by the constarant of mean-zero it's k-1 dimensional space. If h(Z) is a q-dimensional random functions, the total dimension is q X (k - 1).
+
+ For this mean-zero random function spaces, define \<h_1, h_2\> by E\[![{"type":"\$\$","font":{"size":11,"family":"Arial","color":"#000000"},"aid":null,"code":"\$\$h\_{1}\^{T}\\\\,h\_{2}\$\$","id":"24","backgroundColor":"#ffffff","ts":1700688460429,"cs":"O6TG1qljuf/qAAa7SoVvTg==","size":{"width":36,"height":18}}](https://lh7-us.googleusercontent.com/76xXdW3DK3J3iMheNc-gfkQNpk9xmSnRrZkiuCpGZjiAOorG9Cml8b0jKCWnqnqB9SaE_Mu4CaImF4cChSMSDh9Z3cFyCg6lgPM0xuYxsc67n9ADwhtqhVjhA8pxurr3BwFk4jROXZ-SCiz02qA7XlM){alt="{\"type\":\"$$\",\"font\":{\"size\":11,\"family\":\"Arial\",\"color\":\"#000000\"},\"aid\":null,\"code\":\"$$h_{1}^{T}\\\\,h_{2}$$\",\"id\":\"24\",\"backgroundColor\":\"#ffffff\",\"ts\":1700688460429,\"cs\":\"O6TG1qljuf/qAAa7SoVvTg==\",\"size\":{\"width\":36,\"height\":18}}"}\], where h_1 and h_2 are elements of the space. Then. this space is the Hilbert space: proof is in Tsiatis (page 14). By L_2 completeness, this space is also a complete space. Orthogonality is defined as  \<h_1, h_2\> = 0
